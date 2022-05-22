@@ -1,4 +1,0 @@
-streamlit
-Keras
-numpy
-opencv_python
