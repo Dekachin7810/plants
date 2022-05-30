@@ -9,7 +9,7 @@ from keras.models import load_model
 model = load_model('plant_disease.h5')
 
 #Name of Classes
-CLASS_NAMES = ['кукурузный-ржавчиной', 'томатный-бактериальной пятнистостью', 'картофельный-альтернариозом']
+CLASS_NAMES = ['Corn-Common_rust', 'Tomato-Bacterial_spot', 'Potato-Early_blight']
 
 #Setting Title of App
 st.title("Распознавание болезней растений")
