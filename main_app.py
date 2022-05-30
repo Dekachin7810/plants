@@ -9,7 +9,7 @@ from keras.models import load_model
 model = load_model('plant_disease.h5')
 
 #Name of Classes
-CLASS_NAMES = ['Corn-Common_rust', 'Tomato-Bacterial_spot', 'Potato-Early_blight']
+CLASS_NAMES = ['кукурузный-ржавчиной', 'томатный-бактериальной пятнистостью', 'картофельный-альтернариозом']
 
 #Setting Title of App
 st.title("Распознавание болезней растений")
@@ -40,4 +40,4 @@ if submit:
         #Make Prediction
         Y_pred = model.predict(opencv_image)
         result = CLASS_NAMES[np.argmax(Y_pred)]
-        st.title(str("This is "+result.split('-')[0]+ " leaf with " + result.split('-')[1]))
+        st.title(str("Это "+result.split('-')[0]+ " лист с " + result.split('-')[1]))
