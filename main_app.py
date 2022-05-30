@@ -9,10 +9,10 @@ from keras.models import load_model
 model = load_model('plant_disease.h5')
 
 #Name of Classes
-CLASS_NAMES = ['Corn-Common_rust', 'Tomato-Bacterial_spot', 'Potato-Early_blight']
+CLASS_NAMES = ['кукурузный-ржавчиной', 'томатный-бактериальной пятнистостью', 'картофельный-альтернариозом']
 
 #Setting Title of App
-st.title("Распознавание болезней растений")
+st.title("Распознавание болезней кукурузы, томатов и картофеля")
 st.markdown("Загрузите фото листа растения")
 
 #Uploading the image
