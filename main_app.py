@@ -9,15 +9,15 @@ from keras.models import load_model
 model = load_model('plant_disease.h5')
 
 #Name of Classes
-CLASS_NAMES = ['Corn-Common_rust', 'Potato-Early_blight', 'Tomato-Bacterial_spot']
+CLASS_NAMES = ['Ржавчина кукурузы', 'Бактериальная пятнистость томатов', 'Картофельный альтернариоз']
 
 #Setting Title of App
-st.title("Plant Disease Detection")
-st.markdown("Upload an image of the plant leaf")
+st.title("Распознавание болезней растений")
+st.markdown("Загрузите фото листа растения")
 
-#Uploading the dog image
-plant_image = st.file_uploader("Choose an image...", type="jpg")
-submit = st.button('Predict')
+#Uploading the image
+plant_image = st.file_uploader("Выбрать фото...", type="jpg")
+submit = st.button('Узнать')
 #On predict button click
 if submit:
 
